@@ -199,7 +199,7 @@ def main():
     checkpoint = number_of_epochs / 100
     mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
-    input('->')
+    input('-> ')
 
     with tf.Session(graph=net.graph) as session:
         tf.initialize_all_variables().run()

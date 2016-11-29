@@ -31,7 +31,7 @@ network = regression(
 )
 
 # Training
-model = tflearn.DNN(network)
+model = tflearn.DNN(network, tensorboard_verbose=3)
 model.fit(
     examples,
     labels,
