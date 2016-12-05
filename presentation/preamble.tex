@@ -1,4 +1,4 @@
-% !TEX root = ../presentation.tex
+% !TEX root = presentation.tex
 % Presentation Preamble
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,7 +90,7 @@
     \vspace*{-15pt}%
     \scriptsize
     Peter Goldsborough\hspace{1.3cm}%
-    My Learning is Deeper Than Yours\hfill%
+    Show me your gradients\hfill%
     \insertpagenumber}%
 }
 \setbeamertemplate{navigation symbols}{}
@@ -197,6 +197,10 @@
 
 \newcommand{\numbersquare}[3]{
   \draw #1 rectangle ++(#2, #2) node [midway, black] {#3};
+}
+
+\newcommand{\colornumbersquare}[4]{
+  \draw [#4] #1 rectangle ++(#2, #2) node [midway] {#3};
 }
 
 \newcommand{\onesquare}[2]{ \numbersquare{#1}{1}{#2} }
