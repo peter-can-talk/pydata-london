@@ -166,7 +166,7 @@ class LeNet5(object):
     @staticmethod
     def _create_layer(*shape):
         weights = tf.Variable(tf.truncated_normal(shape, stddev=0.1))
-        bias = tf.Variable(tf.constant(0.1, shape=shape[-1:]))
+        bias = tf.Variable(tf.constant(0.1, shape=[shape[-1]]))
 
         return Layer(weights, bias)
 
